@@ -36,7 +36,7 @@ def add_project():
     if project_form.validate_on_submit():
         project_name = project_form.project_name.data
         description = project_form.description.data
-        completed = project_form.completed.data
+        completed = project_form.completed.data 
         team_id = project_form.team_selection.data
 
         new_project = Project(project_name, completed, team_id, description = description)
